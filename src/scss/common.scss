@@ -1,0 +1,31 @@
+@import './variable.scss';
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  height: 100%;
+}
+
+#app{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $default-color;
+  font-size: $font-size;
+  line-height: 1.5;
+}
+
+.link{
+  display: inline-block;
+  text-decoration: none;
+  color: $white;
+}
+
+.is-vertical{
+  flex-direction: column;
+}
+
+.el-container{
+  height: 100%;
+}

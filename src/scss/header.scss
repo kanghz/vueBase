@@ -1,0 +1,30 @@
+@import './variable.scss';
+
+.header{
+  display: flex;
+  background: $background-color;
+  .logo-box{
+    margin: 0;
+    .link{
+      display: block;
+    }
+    .logo{
+      display: block;
+    }
+  }
+  .nav{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 16px;
+    .nav-link{
+      padding: 18px 40px;
+      &:hover{
+        background: rgba(0,0,0,0.15);
+      }
+    }
+    .active{
+      background: rgba(0,0,0,0.1);
+      color: $white;
+    }
+  }
+}
