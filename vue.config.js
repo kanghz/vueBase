@@ -12,15 +12,19 @@ module.exports = {
   },
   configureWebpack: {
     optimization: {
-      minimize: false,
       splitChunks: {
-        chunks: 'initial',
+        automaticNameDelimiter: '-',
         cacheGroups: {
-            commons: {
-                test: /[\\/]node_modules[\\/]/,
-                name: "common",
-                chunks: "all"
-            }
+          vue: {
+            test: /vue/,
+            name: "vue",
+            chunks: "all"
+          },
+          element: {
+            test: /element-ui/,
+            name: "element",
+            chunks: "all"
+          }
         }
       }
     },
