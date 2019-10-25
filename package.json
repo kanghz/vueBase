@@ -1,5 +1,5 @@
 {
-  "name": "baseapp",
+  "name": "base-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -46,12 +46,13 @@
   "lint-staged": {
     "*.{js,json,vue}": [
       "eslint --fix --ext",
-      "prettier --write",
       "git add"
     ]
   },
   "prettier": {
-    "printWidth": 120
+    "printWidth": 120,
+    "semicolons": false,
+    "trailingCcomma": "es5"
   },
   "eslintConfig": {
     "root": true,
