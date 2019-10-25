@@ -45,14 +45,15 @@
   },
   "lint-staged": {
     "*.{js,json,vue}": [
-      "eslint --fix --ext",
+      "eslint --ext",
       "git add"
     ]
   },
   "prettier": {
     "printWidth": 120,
-    "semicolons": false,
-    "trailingCcomma": "es5"
+    "semi": false,
+    "trailingCommas": "es5",
+    "alwaysParens": "always"
   },
   "eslintConfig": {
     "root": true,
@@ -65,7 +66,6 @@
       "plugin:vue/essential"
     ],
     "rules": {
-      "prettier/prettier": "error",
       "no-console": "off"
     },
     "parserOptions": {
