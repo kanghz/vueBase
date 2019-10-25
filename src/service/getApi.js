@@ -1,13 +1,13 @@
-import service from './service'
-import { apiPath } from './api'
+import service from "./service"
+import { apiPath } from "./api"
 
 export default {
-  fetchData(){
+  fetchData() {
     return service.get(apiPath.fetchData, v => {
       console.log(v)
     })
   },
-  getRoles(){
+  getRoles() {
     return service.get(apiPath.roles, v => {
       console.log(v)
     })
