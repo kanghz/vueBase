@@ -17,10 +17,11 @@ import { debuglog } from 'util';
 export default {
   computed: {
     ...mapGetters(['currentRouter']),
-    sidebar(){
+    sidebar () {
       if(this.currentRouter){
         return this.currentRouter.children
       }
+      return []
     }
   }
 }
