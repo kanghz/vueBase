@@ -11,6 +11,6 @@ module.exports = {
   },
   "plugins": ["prettier"],
   "globals": {
-    "React": "readable"
+    "Vue": "readable"
   }
 };

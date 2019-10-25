@@ -22,7 +22,6 @@ export default {
   components:{
     myHeader,
     sidebar
-    ad
   }
 }
 </script>
